@@ -1,0 +1,31 @@
+
+CREATE TABLE administrator (
+  admin_id varchar(10) PRIMARY KEY NOT NULL,
+  admin_name varchar(50),
+  admin_password varchar(25)
+);
+
+INSERT INTO administrator VALUES('ik0001', 'Kelechi Anderson Iwuorie', 'anderson');
+    
+
+CREATE TABLE students (
+  username varchar(15) PRIMARY KEY NOT NULL,
+  firstname varchar(25),
+  surname varchar(25),
+  gender varchar(7),
+  date_of_birth varchar(10),
+  nationality varchar(30),
+  password varchar(15),
+  passport_url varchar(100),
+  test_score decimal(5,2)
+  );
+
+CREATE TABLE questions (
+  number int(100) PRIMARY KEY NOT NULL,
+  question varchar(300),
+  option_a varchar(25),
+  option_b varchar(25),
+  option_c varchar(25),
+  option_d varchar(25),
+  answer varchar(25)
+  );
